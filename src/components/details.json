@@ -1,0 +1,69 @@
+[
+    
+    {
+      "name": "Kia Picanto",
+      "year": 2021,
+      "photo": "picanto",
+      "total": 13000,
+      "quotes": 150,
+      "inscription":600,
+      "years": 5,
+      "initial": 2500
+    },
+    
+    {
+      "name": "Chevrolet Spark",
+      "year": 2020,
+      "photo": "spark",
+      "total": 14000,
+      "quotes": 200,
+      "inscription":700,
+      "years": 5,
+      "initial": 2700
+    },
+    
+    {
+      "name": "Great Wall",
+      "year": 2021,
+      "photo": "../assets/Great-Wall-M4.png",
+      "total": 15000,
+      "quotes": 250,
+      "inscription":800,
+      "years": 5,
+      "initial": 3000
+    },
+    
+    {
+      "name": "Tigo Chery",
+      "year": 2021,
+      "photo": "../assets/TIGGO-2_06.jpg",
+      "total": 17000,
+      "quotes": 300,
+      "inscription":900,
+      "years": 5,
+      "initial": 3500
+    },
+    
+    {
+      "name": "Chevrolet Tracker",
+      "year": 2021,
+      "photo": "../assets/chevtracker.png",
+      "total": 20000,
+      "quotes": 350,
+      "inscription":1000,
+      "years": 5,
+      "initial": 4000
+    },
+    
+    {
+      "name": "Mazda CX-7",
+      "year": 2021,
+      "photo": "../assets/mazda.png",
+      "total": 17000,
+      "quotes": 300,
+      "inscription":1100,
+      "years": 5,
+      "initial": 4500
+    }
+  
+]
