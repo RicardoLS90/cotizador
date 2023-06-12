@@ -40,41 +40,45 @@ const Custom = () => {
   const image = () => {
     if (index == 0) {
       return picanto;
-    } else if (index == 1) {
-      return spark;
     } else if (index == 2) {
       return great;
-    } else if (index == 3) {
-      return tigo;
     } else if (index == 4) {
       return tracker;
-    } else if (index == 5) {
+    }
+  };
+
+  const image2 = () => {
+    if (index == 0) {
+      return spark;
+    } else if (index == 2) {
+      return tigo;
+    } else if (index == 4) {
       return mazda;
     }
   };
 
   return (
     <>
-    <h2>Selecciona tu vehiculo favorito</h2> 
+      <h2>Elige tu presupuesto</h2>
       <div className="buttoncontainer">
         <div>
-          <button onClick={showCar1}>Kia Picanto</button>
+          <button onClick={showCar1}>$ 14000</button>
         </div>
-        <div>
+        {/* <div>
           <button onClick={showCar2}>Chevrolet Spark</button>
-        </div>
+        </div> */}
         <div>
-          <button onClick={showCar3}>Great Wall</button>
+          <button onClick={showCar3}>$ 16000</button>
         </div>
-        <div>
+        {/* <div>
           <button onClick={showCar4}>Tigo chery</button>
-        </div>
+        </div> */}
         <div>
-          <button onClick={showCar5}>Chevrolet Tracker</button>
+          <button onClick={showCar5}>$ 20000</button>
         </div>
-        <div>
+        {/* <div>
           <button onClick={showCar6}>Mazda CX-7</button>
-        </div>
+        </div> */}
       </div>
       <div>
         <h2 className="carname">{cars[index].name}</h2>
@@ -101,9 +105,35 @@ const Custom = () => {
             <h3> {cars[index].years}</h3>
           </div>
         </div>
-        <div className="contact">
-          <button className="contactbutton">Comunicate con un asesor</button>
+      </div>
+      <div>
+        <h2 className="carname">{cars[index + 1].name}</h2>
+        <img src={image2()} alt="" className="image" />
+        <div className="detailcontainer">
+          <div className="detailbox">
+            <h2 className="title contrato">Valor de contrato</h2>
+            <h3>$ {cars[index + 1].inscription}</h3>
+          </div>
+          <div className="detailbox">
+            <h2 className="title mensualidad">Mensualidad</h2>
+            <h3>$ {cars[index + 1].quotes}</h3>
+          </div>
+          <div className="detailbox">
+            <h2 className="title total">Valor total del vehiculo</h2>
+            <h3>$ {cars[index + 1].total}</h3>
+          </div>
+          <div className="detailbox">
+            <h2 className="title inicial">Valor Inicial </h2>
+            <h3>$ {cars[index + 1].initial}</h3>
+          </div>
+          <div className="detailbox">
+            <h2 className="title años">años de pago</h2>
+            <h3> {cars[index + 1].years}</h3>
+          </div>
         </div>
+      </div>
+      <div className="contact">
+        <button className="contactbutton">Comunicate con un asesor</button>
       </div>
     </>
   );
